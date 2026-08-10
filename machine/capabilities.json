@@ -1,0 +1,12 @@
+{
+  "schema": "glaciereq.repo-capabilities.v1",
+  "repository": "GlacierEQ/weaviate-hybrid-search-claim-fence",
+  "capabilities": [
+    {
+      "id": "hybrid-search-claim-fence",
+      "name": "Hybrid Search Claim Fence",
+      "status": "SCAFFOLD",
+      "module": "src/hybrid_search_claim_fence.py"
+    }
+  ]
+}

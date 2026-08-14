@@ -1,7 +1,7 @@
 [project]
 name = "weaviate-hybrid-search-claim-fence"
-version = "0.0.1"
-description = "Scaffold: Hybrid Search Claim Fence (independent Weaviate lens)"
+version = "0.1.0"
+description = "Deterministic hybrid-search evidence sufficiency and rebinding verifier"
 requires-python = ">=3.11"
 dependencies = []
 

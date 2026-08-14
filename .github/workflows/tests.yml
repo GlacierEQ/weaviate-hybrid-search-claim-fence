@@ -2,8 +2,10 @@ name: tests
 on:
   push:
   pull_request:
+permissions:
+  contents: read
 jobs:
-  pytest:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -12,4 +14,4 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
-      - run: python scripts/operate.py
+      - run: python scripts/verify_claim.py

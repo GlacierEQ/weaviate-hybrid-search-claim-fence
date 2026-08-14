@@ -1,182 +1,32 @@
 {
-  "schema": "glaciereq.repo-excellence-state.v1",
+  "schema": "glaciereq.repo-excellence-state.v2",
   "repository": "GlacierEQ/weaviate-hybrid-search-claim-fence",
-  "principal_state": "PROMOTED",
+  "role": "specialist_component",
+  "principal_state": "FUNCTIONAL_CANDIDATE",
   "gates": {
-    "IDENTITY_RESOLVED": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "github GlacierEQ/weaviate-hybrid-search-claim-fence"
-    },
-    "PROBLEM_VERIFIED": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "README/ISSUE_CONTRACT problem bound"
-    },
-    "TARGET_CONTRACT_FROZEN": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "machine/target-contract.json"
-    },
-    "DONOR_PLAN_RESOLVED": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "elite bar seed; donor_reuse=none"
-    },
-    "VERTICAL_SLICE_ALIVE": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "src mechanism + scripts/operate.py"
-    },
-    "CENTRAL_MECHANISM_PRESENT": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "central mechanism in src/"
-    },
-    "DETERMINISTIC_PROOF_GREEN": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "dual-run green tests"
-    },
-    "ADVERSARIAL_SURVIVAL": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "tests/test_adversarial.py"
-    },
-    "OPERABLE_AND_OBSERVABLE": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "scripts/operate.py dual-run PASS; primary ok"
-    },
-    "PROOF_RECEIPT_BOUND": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "proof_receipt digest=e67cf7a41c95d3b8\u2026 entry=unittest"
-    },
-    "AUTHORITY_BOUND": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "promotion_authority.json local HMAC grant"
-    },
-    "PROJECTION_TRUTH_CLOSED": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "operable=scripts/operate.py dual-run PASS; primary ok; proof=proof_receipt digest=e67cf7a41c95d3b8\u2026 entry=unittest; authority=promotion_authority.json local HMAC grant; claim_ceiling=leaf-native; projection_role=monolith_projection_only"
-    },
-    "CANONICAL_POSITION_RESOLVED": {
-      "status": "PENDING"
-    },
-    "EVOLUTION_CURSOR_DEFINED": {
-      "status": "PASS",
-      "at": "2026-08-10T10:11Z",
-      "evidence": "elite estate elevator"
-    }
+    "problem_verified": "PASS",
+    "unique_value_known": "PASS",
+    "canonical_identity_known": "PASS",
+    "central_mechanism_implemented": "PASS",
+    "deterministic_tests_pass": "PENDING_CURRENT_HEAD",
+    "adversarial_tests_pass": "PENDING_CURRENT_HEAD",
+    "runtime_behavior_observed": "PENDING_CURRENT_HEAD_LOCAL_VERIFIER",
+    "security_authority_bounded": "PASS",
+    "proof_receipt_bound_to_sha": "PENDING_CURRENT_HEAD",
+    "reusable_capabilities_extracted": "PASS",
+    "projections_truth_consistent": "PASS",
+    "evolution_cursor_defined": "PASS"
   },
-  "history": [
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "DISCOVERED",
-      "to": "IDENTITY_RESOLVED",
-      "gate": "IDENTITY_RESOLVED",
-      "result": "PASS",
-      "note": "github GlacierEQ/weaviate-hybrid-search-claim-fence"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "IDENTITY_RESOLVED",
-      "to": "PROBLEM_VERIFIED",
-      "gate": "PROBLEM_VERIFIED",
-      "result": "PASS",
-      "note": "README/ISSUE_CONTRACT problem bound"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "PROBLEM_VERIFIED",
-      "to": "TARGET_CONTRACTED",
-      "gate": "TARGET_CONTRACT_FROZEN",
-      "result": "PASS",
-      "note": "machine/target-contract.json"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "TARGET_CONTRACTED",
-      "to": "SEEDED",
-      "gate": "DONOR_PLAN_RESOLVED",
-      "result": "PASS",
-      "note": "elite bar seed; donor_reuse=none"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "SEEDED",
-      "to": "VERTICAL_SLICE",
-      "gate": "VERTICAL_SLICE_ALIVE",
-      "result": "PASS",
-      "note": "src mechanism + scripts/operate.py"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "VERTICAL_SLICE",
-      "to": "IMPLEMENTED",
-      "gate": "CENTRAL_MECHANISM_PRESENT",
-      "result": "PASS",
-      "note": "central mechanism in src/"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "IMPLEMENTED",
-      "to": "TESTED",
-      "gate": "DETERMINISTIC_PROOF_GREEN",
-      "result": "PASS",
-      "note": "dual-run green tests"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "TESTED",
-      "to": "ADVERSARIAL_VERIFIED",
-      "gate": "ADVERSARIAL_SURVIVAL",
-      "result": "PASS",
-      "note": "tests/test_adversarial.py"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "ADVERSARIAL_VERIFIED",
-      "to": "OPERABLE",
-      "gate": "OPERABLE_AND_OBSERVABLE",
-      "result": "PASS",
-      "note": "scripts/operate.py dual-run PASS; primary ok"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "OPERABLE",
-      "to": "PROOF_REPRODUCED",
-      "gate": "PROOF_RECEIPT_BOUND",
-      "result": "PASS",
-      "note": "proof_receipt digest=e67cf7a41c95d3b8\u2026 entry=unittest"
-    },
-    {
-      "at": "2026-08-10T10:11Z",
-      "from": "PROOF_REPRODUCED",
-      "to": "PROMOTED",
-      "gate": "AUTHORITY_BOUND",
-      "result": "PASS",
-      "note": "promotion_authority.json local HMAC grant"
-    }
+  "unique_value": "Normalized BM25/vector fusion evaluated as evidence sufficiency with source diversity, contradiction limits, work bounds, snapshot identity, deterministic digests, and expected-evidence rebinding.",
+  "authority_boundary": "No provider retrieval/authentication, index mutation, production deployment, or live Weaviate authority. The verifier evaluates caller-supplied normalized evidence only.",
+  "historical_proof_policy": "All pre-convergence scaffold promotion/operate/HMAC receipts are historical and do not prove the current source revision.",
+  "reusable_capabilities": [
+    "deterministic hybrid score fusion",
+    "claim evidence sufficiency policy",
+    "source diversity and contradiction accounting",
+    "snapshot/evidence digest binding",
+    "expected-evidence rebinding",
+    "bounded fail-closed verification"
   ],
-  "contract_ref": "machine/target-contract.json",
-  "scores_ref": "machine/excellence-scores.json",
-  "evolution_cursor": "next:canonical_position_only_if_estate_role_resolved",
-  "wave": {
-    "id": "WAVE-C-2026-08-10",
-    "label": "Wave C \u2014 Innovation scaffold excellence group",
-    "group": "C",
-    "phase": "PROMOTED",
-    "enrolled_at": "2026-08-10T1002Z",
-    "promoted_at": "2026-08-10T1011Z",
-    "policy": "glaciereq.repo-excellence.promotion-policy.v1",
-    "proof_ok": true,
-    "operable_ok": true,
-    "projection_truth_closed_at": "2026-08-10T1011Z"
-  },
-  "excellence_group": "C",
-  "scaffold": false
+  "evolution_cursor": "execute full pytest and scripts/verify_claim.py on exact current head; consume review; repair valid findings; re-prove changed source; merge only on unchanged passing head; obtain post-merge canonical proof"
 }

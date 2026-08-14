@@ -2,21 +2,28 @@
   "schema": "glaciereq.repo-target-contract.v1",
   "identity": {
     "repository_id": "GlacierEQ/weaviate-hybrid-search-claim-fence",
-    "family": "elite-estate"
+    "family": "hybrid-search-evidence",
+    "role": "specialist_component"
   },
+  "problem": "Hybrid sparse/vector retrieval scores can be mistaken for sufficient factual evidence without source-diverse support, contradiction limits, and immutable evidence binding.",
+  "unique_value": "Deterministic normalized hybrid scoring plus claim-evidence sufficiency, source diversity, contradiction accounting, bounded work, snapshot identity, and expected-evidence rebinding.",
   "current": {
-    "state": "PROMOTED",
+    "state": "FUNCTIONAL_CANDIDATE",
     "implemented": true,
-    "tested": true,
+    "tested_on_current_head": false,
     "deployed": false
   },
-  "nonclaims": [
-    "no employer affiliation",
-    "no production deployment without receipt"
-  ],
-  "donor_plan": {
-    "mode": "none",
-    "donors": []
+  "authority": {
+    "provider_retrieval": false,
+    "provider_authentication": false,
+    "production_deployment": false,
+    "decision_scope": "evaluate caller-supplied normalized retrieval evidence only"
   },
-  "frozen_at": "2026-08-10T10:11Z"
+  "nonclaims": [
+    "no employer or provider affiliation",
+    "no live Weaviate connection",
+    "no production deployment without authenticated runtime receipt",
+    "no retrieval-quality, latency, scale, revenue, or customer-impact claim"
+  ],
+  "next_cursor": "obtain exact-head full pytest plus scripts/verify_claim.py PASS; consume fresh review; repair any valid findings; merge only on unchanged proven head; then obtain canonical post-merge proof"
 }
